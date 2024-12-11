@@ -34,16 +34,19 @@ const Pricing = () => {
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold mb-4 text-primary">
-          Memebership Pricing
+          Membership Pricing
         </h2>
         <p className="text-gray-600 dark:text-gray-300 text-center max-w-xl mx-auto mb-12">
           Whether you’re looking for more information or just want to send us a
           message, feel free to reach out. We’d love to hear from you!
         </p>
         <div className="grid gap-6 md:grid-cols-3">
-          {pricingJson.map((item) => {
+          {pricingJson.map((item, index) => {
             return (
-              <div className="border p-6 rounded-lg shadow-md text-start">
+              <div
+                key={index} // Adding a unique key
+                className="border p-6 rounded-lg shadow-md text-start"
+              >
                 <h3 className="text-2xl font-semibold">{item.plan}</h3>
                 <p className="text-gray-500 text-sm">{item.text}</p>
                 <h1 className="text-3xl font-bold mt-4 mb-4">{item.price}</h1>

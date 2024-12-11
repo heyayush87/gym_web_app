@@ -101,7 +101,7 @@ const Contact = () => {
                   title="Gym Location"
                   className="w-full h-full rounded-lg"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29456.975549045994!2d88.3228672!3d22.6492416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d552f1bcc7d6f4f%3A0xd255053387b8dc4a!2sWebelite%20Builders!5e0!3m2!1sen!2sin!4v1730181193447!5m2!1sen!2sin"
-                  allowfullscreen=""
+                  allowFullScreen
                   aria-hidden="false"
                   tabIndex="0"
                   loading="lazy"

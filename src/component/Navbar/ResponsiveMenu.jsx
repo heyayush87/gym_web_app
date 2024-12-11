@@ -19,9 +19,9 @@ const ResponsiveMenu = ({ showMenu }) => {
         </div>
         <nav className="mt-12">
           <ul className="space-y-4 text-xl">
-            {Navlinks.map((data) => {
+            {Navlinks.map((data, index) => {
               return (
-                <li>
+                <li key={index}>
                   <a href={data.link} className="mb-5 inline-block">
                     {data.name}
                   </a>

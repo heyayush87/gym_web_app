@@ -47,25 +47,23 @@ const Services = () => {
               Our Services
             </h1>
             <div className="grid grid-cols-2 gap-7">
-              {servicesJson.map((service) => {
-                return (
-                  <div>
-                    <div className="flex flex-col md:flex-row gap-4 items-center text-center md:text-start">
-                      <div className="w-12 h-12 bg-slate-100 dark:bg-[#28282B] text-primary rounded-full flex items-center justify-center md:mb-4">
-                        <service.icon className="w-6 h-6 text-primary-foreground" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-semibold text-white">
-                          {service.title}
-                        </h3>
-                        <p className="text-gray-400 text-sm dark:text-gray-400 mt-2">
-                          {service.description}
-                        </p>
-                      </div>
+              {servicesJson.map((service, index) => (
+                <div key={index}>
+                  <div className="flex flex-col md:flex-row gap-4 items-center text-center md:text-start">
+                    <div className="w-12 h-12 bg-slate-100 dark:bg-[#28282B] text-primary rounded-full flex items-center justify-center md:mb-4">
+                      <service.icon className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold text-white">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-400 text-sm dark:text-gray-400 mt-2">
+                        {service.description}
+                      </p>
                     </div>
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
           </div>
 
